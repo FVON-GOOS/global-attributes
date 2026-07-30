@@ -4,6 +4,8 @@
 **Status:** Working draft for discussion; nothing here is decided.
 **Sources:** NCEI NetCDF Templates v2.0 (ACDD-1.3 / CF based) and IMOS NetCDF Conventions v1.4.2 (June 2021).
 
+**How to vote:** decisions are made in the [Discussions](https://github.com/FVON-GOOS/global-attributes/discussions), one per section (WHAT, WHERE, WHEN, WHO, HOW). Each discussion contains a ballot template: copy it, fill in your two codes per attribute (requirement: Req/Rec/Sug, scope: FVON/NET/FILE) and post it as a single comment. You can edit your comment while the round is open.
+
 ---
 
 ## 1. Decision framework
