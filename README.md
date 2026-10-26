@@ -6,7 +6,7 @@
 
 **How to vote:** decisions are made in the [Discussions](https://github.com/FVON-GOOS/global-attributes/discussions), one per section (WHAT, WHERE, WHEN, WHO, HOW). Each discussion contains a ballot template: copy it, fill in your two codes per attribute (requirement: Req/Rec/Sug/Not, scope: FVON/NET/FILE) and post it as a single comment. You can edit your comment while the round is open.
 
-**Results:** counts per attribute are in [`results/summary.csv`](results/summary.csv), every parsed ballot line in [`results/ballots.csv`](results/ballots.csv), and who has voted in [`results/participation.csv`](results/participation.csv). They are produced by [`scripts/tally.py`](scripts/tally.py) from the comments on the five discussions. A split answer such as `NET/FVON` counts toward each option it names, so agreement means the share of voters who accept that option.
+**Results:** see the [results sheet](https://docs.google.com/spreadsheets/d/11Myewj4vwH2bTyV1rj_Ck7EYqcdY-agMw4PXIGKMZ68/edit?usp=sharing) (view only, readable by anyone with the link). The same counts per attribute are in [`results/summary.csv`](results/summary.csv), every parsed ballot line in [`results/ballots.csv`](results/ballots.csv), and who has voted in [`results/participation.csv`](results/participation.csv). They are produced by [`scripts/tally.py`](scripts/tally.py) from the comments on the five discussions. A split answer such as `NET/FVON` counts toward each option it names, so agreement means the share of voters who accept that option.
 
 ---
 
