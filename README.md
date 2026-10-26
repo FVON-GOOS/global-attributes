@@ -4,7 +4,7 @@
 **Status:** Working draft for discussion; nothing here is decided.
 **Sources:** NCEI NetCDF Templates v2.0 (ACDD-1.3 / CF based) and IMOS NetCDF Conventions v1.4.2 (June 2021).
 
-**How to vote:** decisions are made in the [Discussions](https://github.com/FVON-GOOS/global-attributes/discussions), one per section (WHAT, WHERE, WHEN, WHO, HOW). Each discussion contains a ballot template: copy it, fill in your two codes per attribute (requirement: Req/Rec/Sug, scope: FVON/NET/FILE) and post it as a single comment. You can edit your comment while the round is open.
+**How to vote:** decisions are made in the [Discussions](https://github.com/FVON-GOOS/global-attributes/discussions), one per section (WHAT, WHERE, WHEN, WHO, HOW). Each discussion contains a ballot template: copy it, fill in your two codes per attribute (requirement: Req/Rec/Sug/Not, scope: FVON/NET/FILE) and post it as a single comment. You can edit your comment while the round is open.
 
 ---
 
@@ -18,8 +18,9 @@ For each attribute the group makes **two** decisions:
 | **Req** (Required) | File is rejected / non-compliant without it |
 | **Rec** (Recommended) | Expected wherever meaningful; absence never blocks ingestion |
 | **Sug** (Suggested) | Not part of the core FVON spec; networks may add it where they find it useful |
+| **Not** (Not recommended) | Should not be used in FVON files: redundant, ambiguous, or not applicable to fishing vessels. Ignored if present |
 
-> Terminology note: this deliberately reuses NCEI's own wording (Required / Recommended / Suggested, dropping their "Highly Recommended" middle tier), so the FVON decision reads on the same scale as the NCEI column in the tables. IMOS's two tiers map onto it as Mandatory → Required and Optional → Recommended/Suggested.
+> Terminology note: this deliberately reuses NCEI's own wording (Required / Recommended / Suggested, dropping their "Highly Recommended" middle tier), so the FVON decision reads on the same scale as the NCEI column in the tables. IMOS's two tiers map onto it as Mandatory → Required and Optional → Recommended/Suggested. **Not recommended** has no equivalent in either source: it is the FVON decision to leave an attribute out, for attributes that are redundant with another one, ambiguous in practice, or do not fit fishing vessels.
 
 ### Decision B: Value scope (who sets the value?)
 | Code | Meaning | Example |
