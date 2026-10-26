@@ -1,0 +1,187 @@
+section,attribute,voter,date,requirement,scope,note,url
+WHAT,cdm_data_type,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,Conventions,CarlesODN,2026-07-30,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,featureType,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,id,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,instrument,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,instrument_serial_number,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,instrument_vocabulary,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,keywords,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,keywords_vocabulary,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,metadata_link,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,naming_authority,CarlesODN,2026-07-30,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,ncei_template_version,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,platform,CarlesODN,2026-07-30,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,platform_vocabulary,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,product_version,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,program,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,project,CarlesODN,2026-07-30,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,sensorML,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,site_code/site,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,standard_name_vocabulary,CarlesODN,2026-07-30,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,summary,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,title,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,uuid,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
+WHAT,cdm_data_type,verolago,2026-10-20,Sug,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,Conventions,verolago,2026-10-20,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,featureType,verolago,2026-10-20,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,id,verolago,2026-10-20,Rec,FILE,"N.B.: if using the id, note that the file count in the ZT sensor raw file names reset sporadically when the battery is low, so we shouldn't use that count in ID.",https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,instrument,verolago,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,instrument_serial_number,verolago,2026-10-20,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,instrument_vocabulary,verolago,2026-10-20,Not,FILE,"(instrument dependant; should also have a voting category for those not needed/not relevant, lower than suggested)",https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,keywords,verolago,2026-10-20,Sug,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,keywords_vocabulary,verolago,2026-10-20,Sug,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,metadata_link,verolago,2026-10-20,Sug,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,naming_authority,verolago,2026-10-20,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,ncei_template_version,verolago,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,platform,verolago,2026-10-20,Rec,NET/FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,platform_vocabulary,verolago,2026-10-20,Rec,NET/FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,product_version,verolago,2026-10-20,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,program,verolago,2026-10-20,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,project,verolago,2026-10-20,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,sensorML,verolago,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,site_code/site,verolago,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,standard_name_vocabulary,verolago,2026-10-20,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,summary,verolago,2026-10-20,Req,FILE/NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,title,verolago,2026-10-20,Req,FILE/NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,uuid,verolago,2026-10-20,Not,,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19064614
+WHAT,cdm_data_type,novantonio,2026-10-20,Sug,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,Conventions,novantonio,2026-10-20,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,featureType,novantonio,2026-10-20,Rec,FVON,"you have trajectory, timeseries and profiles",https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,instrument,novantonio,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,instrument_serial_number,novantonio,2026-10-20,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,instrument_vocabulary,novantonio,2026-10-20,Rec,FILE,https://vocab.nerc.ac.uk/collection/L05/current/,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,keywords,novantonio,2026-10-20,Sug,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,keywords_vocabulary,novantonio,2026-10-20,Sug,FVON,CF,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,metadata_link,novantonio,2026-10-20,Sug,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,naming_authority,novantonio,2026-10-20,Req,FVON,if it's FVON it shows stronger coordination,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,ncei_template_version,novantonio,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,platform,novantonio,2026-10-20,Rec,FVON,https://vocab.nerc.ac.uk/collection/L06/current/,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,platform_vocabulary,novantonio,2026-10-20,Rec,NET/FVON,https://vocab.nerc.ac.uk/collection/L06/current/,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,product_version,novantonio,2026-10-20,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,program,novantonio,2026-10-20,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,project,novantonio,2026-10-20,Rec,NET,use a DOI,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,sensorML,novantonio,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,site_code/site,novantonio,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,standard_name_vocabulary,novantonio,2026-10-20,Req,FVON,https://vocab.nerc.ac.uk/collection/P01/current/,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,summary,novantonio,2026-10-20,Req,FILE/NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,title,novantonio,2026-10-20,Req,FILE/NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,uuid,novantonio,2026-10-20,Not,,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19076930
+WHAT,(general comment),TetsutaroTakikawa,2026-10-22,,,I answer only a few of the items.,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19118476
+WHAT,instrument,TetsutaroTakikawa,2026-10-22,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19118476
+WHAT,instrument_serial_number,TetsutaroTakikawa,2026-10-22,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19118476
+WHAT,platform,TetsutaroTakikawa,2026-10-22,Rec,FILE,"(Not only fishing vessel, but also research/training vessels, etc.)",https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19118476
+WHAT,project,TetsutaroTakikawa,2026-10-22,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-19118476
+WHERE,geospatial_bounds,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,geospatial_lat_min/max,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,geospatial_lat/lon/vertical_resolution,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,geospatial_lat/lon_units,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,geospatial_lon_min/max,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,geospatial_vertical_min/max,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,geospatial_vertical_positive,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,geospatial_vertical_units,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,sea_name,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-17839169
+WHERE,geospatial_bounds,verolago,2026-10-20,Sug,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,geospatial_lat_min/max,verolago,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,geospatial_lat/lon/vertical_resolution,verolago,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,geospatial_lat/lon_units,verolago,2026-10-20,Rec,NET,(but definitely Req in latitude and longitude variable attributes),https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,geospatial_lon_min/max,verolago,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,geospatial_vertical_min/max,verolago,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,geospatial_vertical_positive,verolago,2026-10-20,Rec,FVON,(but definitely mandatory in depth variable attributes),https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,geospatial_vertical_units,verolago,2026-10-20,Rec,FVON,(but definitely mandatory in depth variable attributes),https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,sea_name,verolago,2026-10-20,Not,,"(a vessel could start a deployment within the limit of one sea and finish outside, depending on boundary definition for example)",https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19064694
+WHERE,(general comment),novantonio,2026-10-20,,,all WGS84,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,geospatial_bounds,novantonio,2026-10-20,Sug,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,geospatial_lat_min/max,novantonio,2026-10-20,Req,FILE,and you need 2 separated fields,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,geospatial_lat/lon/vertical_resolution,novantonio,2026-10-20,Not,,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,geospatial_lat/lon_units,novantonio,2026-10-20,Not,,WGS84,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,geospatial_lon_min/max,novantonio,2026-10-20,Req,FILE,and you need 2 separated fields,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,geospatial_vertical_min/max,novantonio,2026-10-20,Req,FILE,and you need 2 separated fields,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,geospatial_vertical_positive,novantonio,2026-10-20,Rec,FVON,"it is depth and, considering that we need to be interoperable with other topics z is negative in the water and positive in the air",https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,geospatial_vertical_units,novantonio,2026-10-20,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHERE,sea_name,novantonio,2026-10-20,Not,,,https://github.com/FVON-GOOS/global-attributes/discussions/2#discussioncomment-19076851
+WHEN,date_created,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-17839158
+WHEN,date_issued,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-17839158
+WHEN,date_metadata_modified,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-17839158
+WHEN,date_modified,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-17839158
+WHEN,local_time_zone,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-17839158
+WHEN,time_coverage_duration,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-17839158
+WHEN,time_coverage_resolution,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-17839158
+WHEN,time_coverage_start/end,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-17839158
+WHEN,date_created,verolago,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19064873
+WHEN,date_issued,verolago,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19064873
+WHEN,date_metadata_modified,verolago,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19064873
+WHEN,date_modified,verolago,2026-10-20,Sug,FILE,"(already covered in other fields, but good to add)",https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19064873
+WHEN,local_time_zone,verolago,2026-10-20,Not,,"(a vessel count start a deployment in a timezone and finish in another, UTC should be compulsory)",https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19064873
+WHEN,time_coverage_duration,verolago,2026-10-20,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19064873
+WHEN,time_coverage_resolution,verolago,2026-10-20,Not,,(time coverage resolution varies within a file in the case of ZT sensor),https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19064873
+WHEN,time_coverage_start/end,verolago,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19064873
+WHEN,(general comment),novantonio,2026-10-20,,,all in UTC - ISO8061 and we need 2 fields: time_coverage_start time_coverage_end this simplify automation and FAIRness,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19076775
+WHEN,date_created,novantonio,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19076775
+WHEN,date_metadata_modified,novantonio,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19076775
+WHEN,date_modified,novantonio,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19076775
+WHEN,time_coverage_duration,novantonio,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19076775
+WHEN,time_coverage_resolution,novantonio,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19076775
+WHEN,time_coverage_start/end,novantonio,2026-10-20,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/3#discussioncomment-19076775
+WHO,acknowledgment,CarlesODN,2026-07-30,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,contributor_name/role,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,creator_email,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,creator_institution,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,creator_name,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,creator_type,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,creator_url,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,institution,CarlesODN,2026-07-30,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,principal_investigator,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,publisher_email,CarlesODN,2026-07-30,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,publisher_name,CarlesODN,2026-07-30,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,publisher_type/url/institution,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-17839152
+WHO,acknowledgment,verolago,2026-10-20,Req,NET,(That is where we acknowledge indigenous data collection also),https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,contributor_name/role,verolago,2026-10-20,Sug,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,creator_email,verolago,2026-10-20,Req,NET,(e.g. need to be contactable if there is issues with the data),https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,creator_institution,verolago,2026-10-20,Sug,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,creator_name,verolago,2026-10-20,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,creator_type,verolago,2026-10-20,Not,,(unsure),https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,creator_url,verolago,2026-10-20,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,institution,verolago,2026-10-20,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,principal_investigator,verolago,2026-10-20,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,publisher_email,verolago,2026-10-20,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,publisher_name,verolago,2026-10-20,Req,NET,"(in our case, we have to use AODN, can't change)",https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,publisher_type/url/institution,verolago,2026-10-20,Sug,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19065333
+WHO,acknowledgment,novantonio,2026-10-20,Req,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19076733
+WHO,contributor_name/role,novantonio,2026-10-20,Sug,FILE,ORCID,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19076733
+WHO,creator_institution,novantonio,2026-10-20,Req,NET,ROR,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19076733
+WHO,institution,novantonio,2026-10-20,Req,NET,ROR,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19076733
+WHO,principal_investigator,novantonio,2026-10-20,Rec,FILE,ORCID,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19076733
+WHO,publisher_name,novantonio,2026-10-20,Req,NET,ROR,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19076733
+WHO,publisher_type/url/institution,novantonio,2026-10-20,Sug,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/4#discussioncomment-19076733
+HOW,citation,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,comment,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,disclaimer,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,file_version_quality_control,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,history,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,license,CarlesODN,2026-07-30,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,lineage,CarlesODN,2026-07-30,Sug,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,processing_level,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,quality_control_log,CarlesODN,2026-07-30,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,references,CarlesODN,2026-07-30,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,source,CarlesODN,2026-07-30,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-17839138
+HOW,citation,verolago,2026-10-20,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,comment,verolago,2026-10-20,Rec,NET,"(we put the calculation method for depth from pressure, that information should at least be somewhere in the file)",https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,disclaimer,verolago,2026-10-20,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,file_version_quality_control,verolago,2026-10-20,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,history,verolago,2026-10-20,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,license,verolago,2026-10-20,Req,NET,"(we can't change ours, although we might all have the same)",https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,lineage,verolago,2026-10-20,Not,n/a,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,processing_level,verolago,2026-10-20,Req,FILE,(same as file_version_quality_control?),https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,quality_control_log,verolago,2026-10-20,Sug,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,references,verolago,2026-10-20,Rec,NET,"(we have the link to the OBPS, when FVON has best practices also it should go here as well)",https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,source,verolago,2026-10-20,Req,FVON,"(Could be where we put the attribution to FVON? IMOS has this example: ""source = “Radar Observation” "", so for FVON it could be: ""source = ""FVON "" """,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19065772
+HOW,citation,novantonio,2026-10-20,Rec,NET,use a DOI (e.g. in EU now all the projects have a CORDIS DOI),https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
+HOW,disclaimer,novantonio,2026-10-20,Rec,NET,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
+HOW,history,novantonio,2026-10-20,Rec,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
+HOW,license,novantonio,2026-10-20,Req,FVON,"(and hopefully CC-BY) - without license you cannot interoperate data, so you're not FAIR",https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
+HOW,lineage,novantonio,2026-10-20,Rec,,,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
+HOW,processing_level,novantonio,2026-10-20,Req,FVON,https://vocab.nerc.ac.uk/collection/EPL/current/,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
+HOW,quality_control_log,novantonio,2026-10-20,Req,FVON,https://vocab.nerc.ac.uk/collection/L20/current/,https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
+HOW,references,novantonio,2026-10-20,Req,FVON,"if we add the practice (Best practice) it should be a doi pointing to https://repository.oceanbestpractices.org/home, if the practice is not there you're welcome to submit",https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
+HOW,source,novantonio,2026-10-20,Req,FVON,"https://vocab.nerc.ac.uk/collection/L05/current/, or we can ask to set up a FVON categories",https://github.com/FVON-GOOS/global-attributes/discussions/5#discussioncomment-19076689
