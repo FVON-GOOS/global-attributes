@@ -134,7 +134,7 @@ def leading(counter, voters, order):
         label = "majority"
     else:
         label = "split"
-    return " / ".join(best), round(share, 2), label
+    return " / ".join(best), round(share * 100), label
 
 
 def main():
@@ -155,16 +155,16 @@ def main():
             who = (c.get("author") or {}).get("login") or "ghost"
             parsed.append((who, c, votes))
             if general:
-                ballots.append({"section": sec, "attribute": "(general comment)", "voter": who,
-                                "date": c["updatedAt"][:10], "requirement": "", "scope": "", "note": general, "url": c["url"]})
+                ballots.append({"Section": sec, "Attribute": "(general comment)", "Voter": who,
+                                "Date": c["updatedAt"][:10], "Requirement": "", "Scope": "", "Note": general, "Link": c["url"]})
             for key in canon:
                 if key in votes:
                     req, scopes, note = votes[key]
-                    ballots.append({"section": sec, "attribute": key, "voter": who, "date": c["updatedAt"][:10],
-                                    "requirement": req, "scope": "/".join(scopes), "note": note, "url": c["url"]})
-        participation.append({"section": sec, "discussion": d["url"], "ballots": len(parsed),
-                              "voters": ", ".join(p[0] for p in parsed),
-                              "last_ballot": max((p[1]["updatedAt"][:10] for p in parsed), default="")})
+                    ballots.append({"Section": sec, "Attribute": key, "Voter": who, "Date": c["updatedAt"][:10],
+                                    "Requirement": req, "Scope": "/".join(scopes), "Note": note, "Link": c["url"]})
+        participation.append({"Section": sec, "Discussion": d["url"], "Ballots": len(parsed),
+                              "Voters": ", ".join(p[0] for p in parsed),
+                              "Last ballot": max((p[1]["updatedAt"][:10] for p in parsed), default="")})
         for key, label, ncei, imos in ref:
             reqs, scopes, notes = Counter(), Counter(), []
             n_req = n_scope = 0
@@ -182,12 +182,12 @@ def main():
                     notes.append(f"{who}: {note}")
             lr, lr_share, lr_label = leading(reqs, n_req, REQ_CODES)
             ls, ls_share, ls_label = leading(scopes, n_scope, SCOPE_CODES)
-            row = {"section": sec, "attribute": key, "ncei": ncei, "imos": imos, "voters": n_req}
+            row = {"Section": sec, "Attribute": key, "NCEI": ncei, "IMOS": imos, "Voters": n_req}
             row.update({c: reqs.get(c, 0) for c in REQ_CODES})
-            row.update({"leading_requirement": lr, "requirement_agreement": lr_share, "requirement_status": lr_label})
-            row.update({f"scope_{c}": scopes.get(c, 0) for c in SCOPE_CODES})
-            row.update({"leading_scope": ls, "scope_agreement": ls_share, "scope_status": ls_label,
-                        "notes": " | ".join(notes)})
+            row.update({"Leading requirement": lr, "Requirement agreement %": lr_share, "Requirement status": lr_label})
+            row.update({c: scopes.get(c, 0) for c in SCOPE_CODES})
+            row.update({"Leading scope": ls, "Scope agreement %": ls_share, "Scope status": ls_label,
+                        "Notes": " | ".join(notes)})
             summary.append(row)
 
     OUT.mkdir(exist_ok=True)
@@ -198,7 +198,7 @@ def main():
     write("summary.csv", summary)
     write("ballots.csv", ballots)
     write("participation.csv", participation)
-    print(f"{len(summary)} attributes, {sum(p['ballots'] for p in participation)} ballots in {len(participation)} sections -> {OUT}")
+    print(f"{len(summary)} attributes, {sum(p['Ballots'] for p in participation)} ballots in {len(participation)} sections -> {OUT}")
 
 
 if __name__ == "__main__":

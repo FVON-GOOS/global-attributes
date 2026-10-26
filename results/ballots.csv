@@ -1,4 +1,4 @@
-section,attribute,voter,date,requirement,scope,note,url
+Section,Attribute,Voter,Date,Requirement,Scope,Note,Link
 WHAT,cdm_data_type,CarlesODN,2026-07-30,Rec,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
 WHAT,Conventions,CarlesODN,2026-07-30,Req,FVON,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
 WHAT,featureType,CarlesODN,2026-07-30,Req,FILE,,https://github.com/FVON-GOOS/global-attributes/discussions/1#discussioncomment-17839130
