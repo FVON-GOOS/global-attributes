@@ -4,8 +4,9 @@
 Reads every discussion titled "Global attributes vote | ...", parses each comment's
 ballot lines ("attribute: Req, FVON  --> note"), and writes three CSV files:
 
-  results/summary.csv        one row per attribute: vote counts, leading option, agreement
-  results/ballots.csv        one row per voter and attribute, as parsed, with the note
+  results/summary.csv        one row per attribute: the leading requirement and scope
+  results/ballots.csv        one row per voter and attribute, as parsed, with the note,
+                             sorted by section, then attribute
   results/participation.csv  one row per section: who voted and when
 
 Runs locally (token from GH_TOKEN, GITHUB_TOKEN or `gh auth token`) or in GitHub Actions.
@@ -120,21 +121,12 @@ def parse_ballot(body, canon):
 
 
 # ---------------------------------------------------------------- stats
-def leading(counter, voters, order):
-    if voters == 0 or not counter:
-        return "", 0.0, "no votes"
+def leading(counter, order):
+    """The option(s) with most votes; ties are joined, e.g. 'Req / Rec'."""
+    if not counter:
+        return ""
     top = max(counter.values())
-    best = [o for o in order if counter.get(o, 0) == top]
-    share = top / voters
-    if len(best) > 1:
-        label = "tie"
-    elif share == 1:
-        label = "unanimous"
-    elif share > 0.5:
-        label = "majority"
-    else:
-        label = "split"
-    return " / ".join(best), round(share * 100), label
+    return " / ".join(o for o in order if counter.get(o, 0) == top)
 
 
 def main():
@@ -166,29 +158,22 @@ def main():
                               "Voters": ", ".join(p[0] for p in parsed),
                               "Last ballot": max((p[1]["updatedAt"][:10] for p in parsed), default="")})
         for key, label, ncei, imos in ref:
-            reqs, scopes, notes = Counter(), Counter(), []
-            n_req = n_scope = 0
+            reqs, scopes = Counter(), Counter()
             for who, c, votes in parsed:
                 if key not in votes:
                     continue
                 req, sc, note = votes[key]
                 if req:
-                    reqs[req] += 1; n_req += 1
-                if sc:
-                    n_scope += 1
-                    for s in set(sc):
-                        scopes[s] += 1
-                if note:
-                    notes.append(f"{who}: {note}")
-            lr, lr_share, lr_label = leading(reqs, n_req, REQ_CODES)
-            ls, ls_share, ls_label = leading(scopes, n_scope, SCOPE_CODES)
-            row = {"Section": sec, "Attribute": key, "NCEI": ncei, "IMOS": imos, "Voters": n_req}
-            row.update({c: reqs.get(c, 0) for c in REQ_CODES})
-            row.update({"Leading requirement": lr, "Requirement agreement %": lr_share, "Requirement status": lr_label})
-            row.update({c: scopes.get(c, 0) for c in SCOPE_CODES})
-            row.update({"Leading scope": ls, "Scope agreement %": ls_share, "Scope status": ls_label,
-                        "Notes": " | ".join(notes)})
-            summary.append(row)
+                    reqs[req] += 1
+                for s in set(sc):          # a split answer (NET/FVON) counts toward each option
+                    scopes[s] += 1
+            summary.append({"Section": sec, "Attribute": key, "NCEI": ncei, "IMOS": imos,
+                            "Leading requirement": leading(reqs, REQ_CODES),
+                            "Leading scope": leading(scopes, SCOPE_CODES)})
+
+    # ballots: by section (WHAT, WHERE, WHEN, WHO, HOW), then attribute; voters keep posting order
+    sec_rank = {s: i for i, s in enumerate(SECTION_ORDER)}
+    ballots.sort(key=lambda b: (sec_rank.get(b["Section"], 99), b["Attribute"].lower()))
 
     OUT.mkdir(exist_ok=True)
     def write(name, rows):

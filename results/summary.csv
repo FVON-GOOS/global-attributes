@@ -1,64 +1,64 @@
-Section,Attribute,NCEI,IMOS,Voters,Req,Rec,Sug,Not,Leading requirement,Requirement agreement %,Requirement status,FVON,NET,FILE,n/a,Leading scope,Scope agreement %,Scope status,Notes
-WHAT,cdm_data_type,Rec,O,3,0,1,2,0,Sug,67,majority,3,0,0,0,FVON,100,unanimous,
-WHAT,Conventions,Req,M,3,3,0,0,0,Req,100,unanimous,3,0,0,0,FVON,100,unanimous,
-WHAT,featureType,(structural),O,3,1,2,0,0,Rec,67,majority,2,0,1,0,FVON,67,majority,"novantonio: you have trajectory, timeseries and profiles"
-WHAT,id,Req,n/a,2,0,2,0,0,Rec,100,unanimous,0,0,2,0,FILE,100,unanimous,"verolago: N.B.: if using the id, note that the file count in the ZT sensor raw file names reset sporadically when the battery is low, so we shouldn't use that count in ID."
-WHAT,instrument,Rec,O,4,4,0,0,0,Req,100,unanimous,0,0,4,0,FILE,100,unanimous,
-WHAT,instrument_serial_number,n/a,O,4,0,4,0,0,Rec,100,unanimous,0,0,4,0,FILE,100,unanimous,
-WHAT,instrument_vocabulary,Rec,n/a,3,0,2,0,1,Rec,67,majority,1,0,2,0,FILE,67,majority,"verolago: (instrument dependant; should also have a voting category for those not needed/not relevant, lower than suggested) | novantonio: https://vocab.nerc.ac.uk/collection/L05/current/"
-WHAT,keywords,Rec,O,3,0,1,2,0,Sug,67,majority,2,1,0,0,FVON,67,majority,
-WHAT,keywords_vocabulary,Rec,O,3,0,1,2,0,Sug,67,majority,2,1,0,0,FVON,67,majority,novantonio: CF
-WHAT,metadata_link,Sug,O,3,0,1,2,0,Sug,67,majority,0,3,0,0,NET,100,unanimous,
-WHAT,naming_authority,Req,M,3,3,0,0,0,Req,100,unanimous,2,1,0,0,FVON,67,majority,novantonio: if it's FVON it shows stronger coordination
-WHAT,ncei_template_version,Sug,n/a,3,0,0,1,2,Not,67,majority,0,0,0,3,n/a,100,unanimous,
-WHAT,platform,Rec,O,4,1,3,0,0,Rec,75,majority,2,2,1,0,FVON / NET,50,tie,"novantonio: https://vocab.nerc.ac.uk/collection/L06/current/ | TetsutaroTakikawa: (Not only fishing vessel, but also research/training vessels, etc.)"
-WHAT,platform_vocabulary,Rec,n/a,3,0,3,0,0,Rec,100,unanimous,3,2,0,0,FVON,100,unanimous,novantonio: https://vocab.nerc.ac.uk/collection/L06/current/
-WHAT,product_version,Sug,n/a,3,0,3,0,0,Rec,100,unanimous,0,0,3,0,FILE,100,unanimous,
-WHAT,program,Sug,n/a,3,0,3,0,0,Rec,100,unanimous,3,0,0,0,FVON,100,unanimous,
-WHAT,project,Rec,M,4,2,2,0,0,Req / Rec,50,tie,1,3,0,0,NET,75,majority,novantonio: use a DOI
-WHAT,sensorML,n/a,O,3,0,0,1,2,Not,67,majority,0,0,0,3,n/a,100,unanimous,
-WHAT,site_code/site,n/a,O,3,0,0,1,2,Not,67,majority,0,0,0,3,n/a,100,unanimous,
-WHAT,standard_name_vocabulary,Rec,M,3,3,0,0,0,Req,100,unanimous,3,0,0,0,FVON,100,unanimous,novantonio: https://vocab.nerc.ac.uk/collection/P01/current/
-WHAT,summary,Req,M,3,3,0,0,0,Req,100,unanimous,0,2,3,0,FILE,100,unanimous,
-WHAT,title,Req,M,3,3,0,0,0,Req,100,unanimous,0,2,3,0,FILE,100,unanimous,
-WHAT,uuid,Sug,n/a,3,0,1,0,2,Not,67,majority,0,0,1,0,FILE,100,unanimous,
-WHERE,geospatial_bounds,Sug,n/a,3,0,0,3,0,Sug,100,unanimous,0,0,2,1,FILE,67,majority,
-WHERE,geospatial_lat_min/max,Rec,M,3,2,1,0,0,Req,67,majority,0,0,3,0,FILE,100,unanimous,novantonio: and you need 2 separated fields
-WHERE,geospatial_lat/lon/vertical_resolution,Rec,n/a,3,0,0,1,2,Not,67,majority,0,0,0,2,n/a,100,unanimous,
-WHERE,geospatial_lat/lon_units,Rec,O,3,0,2,0,1,Rec,67,majority,1,1,0,0,FVON / NET,50,tie,verolago: (but definitely Req in latitude and longitude variable attributes) | novantonio: WGS84
-WHERE,geospatial_lon_min/max,Rec,M,3,2,1,0,0,Req,67,majority,0,0,3,0,FILE,100,unanimous,novantonio: and you need 2 separated fields
-WHERE,geospatial_vertical_min/max,Rec,M,3,2,1,0,0,Req,67,majority,0,0,3,0,FILE,100,unanimous,novantonio: and you need 2 separated fields
-WHERE,geospatial_vertical_positive,Rec,M,3,0,3,0,0,Rec,100,unanimous,3,0,0,0,FVON,100,unanimous,"verolago: (but definitely mandatory in depth variable attributes) | novantonio: it is depth and, considering that we need to be interoperable with other topics z is negative in the water and positive in the air"
-WHERE,geospatial_vertical_units,Rec,O,3,0,3,0,0,Rec,100,unanimous,3,0,0,0,FVON,100,unanimous,verolago: (but definitely mandatory in depth variable attributes)
-WHERE,sea_name,Rec,n/a,3,0,1,0,2,Not,67,majority,0,1,0,0,NET,100,unanimous,"verolago: (a vessel could start a deployment within the limit of one sea and finish outside, depending on boundary definition for example)"
-WHEN,date_created,Rec,M,3,3,0,0,0,Req,100,unanimous,0,0,3,0,FILE,100,unanimous,
-WHEN,date_issued,Rec,n/a,2,0,0,1,1,Sug / Not,50,tie,0,0,0,2,n/a,100,unanimous,
-WHEN,date_metadata_modified,Rec,n/a,3,1,0,1,1,Req / Sug / Not,33,tie,0,0,1,2,n/a,67,majority,
-WHEN,date_modified,Rec,O,3,1,1,1,0,Req / Rec / Sug,33,tie,0,0,3,0,FILE,100,unanimous,"verolago: (already covered in other fields, but good to add)"
-WHEN,local_time_zone,n/a,O,2,0,0,1,1,Sug / Not,50,tie,0,0,0,1,n/a,100,unanimous,"verolago: (a vessel count start a deployment in a timezone and finish in another, UTC should be compulsory)"
-WHEN,time_coverage_duration,Rec,n/a,3,1,0,2,0,Sug,67,majority,0,0,1,2,n/a,67,majority,
-WHEN,time_coverage_resolution,Rec,n/a,3,1,1,0,1,Req / Rec / Not,33,tie,0,0,2,0,FILE,100,unanimous,verolago: (time coverage resolution varies within a file in the case of ZT sensor)
-WHEN,time_coverage_start/end,Rec,M,3,3,0,0,0,Req,100,unanimous,0,0,3,0,FILE,100,unanimous,
-WHO,acknowledgment,Rec,M,3,3,0,0,0,Req,100,unanimous,1,2,0,0,NET,67,majority,verolago: (That is where we acknowledge indigenous data collection also)
-WHO,contributor_name/role,Rec,n/a,3,0,1,2,0,Sug,67,majority,0,0,3,0,FILE,100,unanimous,novantonio: ORCID
-WHO,creator_email,Rec,`author_email` (O),2,1,1,0,0,Req / Rec,50,tie,0,2,0,0,NET,100,unanimous,verolago: (e.g. need to be contactable if there is issues with the data)
-WHO,creator_institution,Rec,n/a,3,1,1,1,0,Req / Rec / Sug,33,tie,0,3,0,0,NET,100,unanimous,novantonio: ROR
-WHO,creator_name,HR,`author` / `principal_investigator` (M),2,1,1,0,0,Req / Rec,50,tie,0,2,0,0,NET,100,unanimous,
-WHO,creator_type,HR,n/a,2,0,1,0,1,Rec / Not,50,tie,0,1,0,0,NET,100,unanimous,verolago: (unsure)
-WHO,creator_url,Rec,n/a,2,0,2,0,0,Rec,100,unanimous,0,2,0,0,NET,100,unanimous,
-WHO,institution,HR,M,3,3,0,0,0,Req,100,unanimous,0,3,0,0,NET,100,unanimous,novantonio: ROR
-WHO,principal_investigator,n/a,M,3,1,1,1,0,Req / Rec / Sug,33,tie,0,1,1,1,NET / FILE / n/a,33,tie,novantonio: ORCID
-WHO,publisher_email,Rec,`data_centre_email` (M),2,2,0,0,0,Req,100,unanimous,0,2,0,0,NET,100,unanimous,
-WHO,publisher_name,Rec,`data_centre` (M),3,3,0,0,0,Req,100,unanimous,0,3,0,0,NET,100,unanimous,"verolago: (in our case, we have to use AODN, can't change) | novantonio: ROR"
-WHO,publisher_type/url/institution,Rec,n/a,3,0,1,2,0,Sug,67,majority,0,3,0,0,NET,100,unanimous,
-HOW,citation,n/a,M,3,0,3,0,0,Rec,100,unanimous,0,3,0,0,NET,100,unanimous,novantonio: use a DOI (e.g. in EU now all the projects have a CORDIS DOI)
-HOW,comment,Rec,O,2,0,2,0,0,Rec,100,unanimous,0,1,1,0,NET / FILE,50,tie,"verolago: (we put the calculation method for depth from pressure, that information should at least be somewhere in the file)"
-HOW,disclaimer,n/a,M (IMOS),3,0,3,0,0,Rec,100,unanimous,0,3,0,0,NET,100,unanimous,
-HOW,file_version_quality_control,n/a,O,2,0,1,1,0,Rec / Sug,50,tie,0,1,0,1,NET / n/a,50,tie,
-HOW,history,Rec,O,3,1,2,0,0,Rec,67,majority,0,0,3,0,FILE,100,unanimous,
-HOW,license,Rec,M,3,3,0,0,0,Req,100,unanimous,2,1,0,0,FVON,67,majority,"verolago: (we can't change ours, although we might all have the same) | novantonio: (and hopefully CC-BY) - without license you cannot interoperate data, so you're not FAIR"
-HOW,lineage,n/a,O,3,0,1,1,1,Rec / Sug / Not,33,tie,0,0,0,2,n/a,100,unanimous,
-HOW,processing_level,Rec,O,3,3,0,0,0,Req,100,unanimous,1,0,2,0,FILE,67,majority,verolago: (same as file_version_quality_control?) | novantonio: https://vocab.nerc.ac.uk/collection/EPL/current/
-HOW,quality_control_log,n/a,O,3,1,1,1,0,Req / Rec / Sug,33,tie,1,0,2,0,FILE,67,majority,novantonio: https://vocab.nerc.ac.uk/collection/L20/current/
-HOW,references,Rec,O,3,1,2,0,0,Rec,67,majority,1,2,0,0,NET,67,majority,"verolago: (we have the link to the OBPS, when FVON has best practices also it should go here as well) | novantonio: if we add the practice (Best practice) it should be a doi pointing to https://repository.oceanbestpractices.org/home, if the practice is not there you're welcome to submit"
-HOW,source,Rec,O,3,3,0,0,0,Req,100,unanimous,3,0,0,0,FVON,100,unanimous,"verolago: (Could be where we put the attribution to FVON? IMOS has this example: ""source = “Radar Observation” "", so for FVON it could be: ""source = ""FVON "" "" | novantonio: https://vocab.nerc.ac.uk/collection/L05/current/, or we can ask to set up a FVON categories"
+Section,Attribute,NCEI,IMOS,Leading requirement,Leading scope
+WHAT,cdm_data_type,Rec,O,Sug,FVON
+WHAT,Conventions,Req,M,Req,FVON
+WHAT,featureType,(structural),O,Rec,FVON
+WHAT,id,Req,n/a,Rec,FILE
+WHAT,instrument,Rec,O,Req,FILE
+WHAT,instrument_serial_number,n/a,O,Rec,FILE
+WHAT,instrument_vocabulary,Rec,n/a,Rec,FILE
+WHAT,keywords,Rec,O,Sug,FVON
+WHAT,keywords_vocabulary,Rec,O,Sug,FVON
+WHAT,metadata_link,Sug,O,Sug,NET
+WHAT,naming_authority,Req,M,Req,FVON
+WHAT,ncei_template_version,Sug,n/a,Not,n/a
+WHAT,platform,Rec,O,Rec,FVON / NET
+WHAT,platform_vocabulary,Rec,n/a,Rec,FVON
+WHAT,product_version,Sug,n/a,Rec,FILE
+WHAT,program,Sug,n/a,Rec,FVON
+WHAT,project,Rec,M,Req / Rec,NET
+WHAT,sensorML,n/a,O,Not,n/a
+WHAT,site_code/site,n/a,O,Not,n/a
+WHAT,standard_name_vocabulary,Rec,M,Req,FVON
+WHAT,summary,Req,M,Req,FILE
+WHAT,title,Req,M,Req,FILE
+WHAT,uuid,Sug,n/a,Not,FILE
+WHERE,geospatial_bounds,Sug,n/a,Sug,FILE
+WHERE,geospatial_lat_min/max,Rec,M,Req,FILE
+WHERE,geospatial_lat/lon/vertical_resolution,Rec,n/a,Not,n/a
+WHERE,geospatial_lat/lon_units,Rec,O,Rec,FVON / NET
+WHERE,geospatial_lon_min/max,Rec,M,Req,FILE
+WHERE,geospatial_vertical_min/max,Rec,M,Req,FILE
+WHERE,geospatial_vertical_positive,Rec,M,Rec,FVON
+WHERE,geospatial_vertical_units,Rec,O,Rec,FVON
+WHERE,sea_name,Rec,n/a,Not,NET
+WHEN,date_created,Rec,M,Req,FILE
+WHEN,date_issued,Rec,n/a,Sug / Not,n/a
+WHEN,date_metadata_modified,Rec,n/a,Req / Sug / Not,n/a
+WHEN,date_modified,Rec,O,Req / Rec / Sug,FILE
+WHEN,local_time_zone,n/a,O,Sug / Not,n/a
+WHEN,time_coverage_duration,Rec,n/a,Sug,n/a
+WHEN,time_coverage_resolution,Rec,n/a,Req / Rec / Not,FILE
+WHEN,time_coverage_start/end,Rec,M,Req,FILE
+WHO,acknowledgment,Rec,M,Req,NET
+WHO,contributor_name/role,Rec,n/a,Sug,FILE
+WHO,creator_email,Rec,`author_email` (O),Req / Rec,NET
+WHO,creator_institution,Rec,n/a,Req / Rec / Sug,NET
+WHO,creator_name,HR,`author` / `principal_investigator` (M),Req / Rec,NET
+WHO,creator_type,HR,n/a,Rec / Not,NET
+WHO,creator_url,Rec,n/a,Rec,NET
+WHO,institution,HR,M,Req,NET
+WHO,principal_investigator,n/a,M,Req / Rec / Sug,NET / FILE / n/a
+WHO,publisher_email,Rec,`data_centre_email` (M),Req,NET
+WHO,publisher_name,Rec,`data_centre` (M),Req,NET
+WHO,publisher_type/url/institution,Rec,n/a,Sug,NET
+HOW,citation,n/a,M,Rec,NET
+HOW,comment,Rec,O,Rec,NET / FILE
+HOW,disclaimer,n/a,M (IMOS),Rec,NET
+HOW,file_version_quality_control,n/a,O,Rec / Sug,NET / n/a
+HOW,history,Rec,O,Rec,FILE
+HOW,license,Rec,M,Req,FVON
+HOW,lineage,n/a,O,Rec / Sug / Not,n/a
+HOW,processing_level,Rec,O,Req,FILE
+HOW,quality_control_log,n/a,O,Req / Rec / Sug,FILE
+HOW,references,Rec,O,Rec,NET
+HOW,source,Rec,O,Req,FVON
