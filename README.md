@@ -1,12 +1,12 @@
 # FVON Data Management Subcommittee: Metadata Decision Draft
 ## Section 1: Global Attributes
 
-**Status:** Working draft for discussion; nothing here is decided.
+**Status:** Working draft for discussion; nothing here is decided. First poll results are in [RESULTS.md](RESULTS.md).
 **Sources:** NCEI NetCDF Templates v2.0 (ACDD-1.3 / CF based) and IMOS NetCDF Conventions v1.4.2 (June 2021).
 
-**How to vote:** decisions are made in the [Discussions](https://github.com/FVON-GOOS/global-attributes/discussions), one per section (WHAT, WHERE, WHEN, WHO, HOW). Each discussion contains a ballot template: copy it, fill in your two codes per attribute (requirement: Req/Rec/Sug/Not, scope: FVON/NET/FILE) and post it as a single comment. You can edit your comment while the round is open.
+**How to vote:** decisions are made in the [Discussions](https://github.com/FVON-GOOS/global-attributes/discussions), one per section (WHAT, WHERE, WHEN, WHO, HOW). Each discussion contains a ballot template: copy it, fill in your two codes per attribute (requirement: Req/Opt/N/A, scope: FVON/NET/FILE) and post it as a single comment. To vote that an attribute should not be used, write `N/A`; a line left blank counts as an abstention, not as a vote against. You can edit your comment while the round is open.
 
-**Results:** see the [results sheet](https://docs.google.com/spreadsheets/d/11Myewj4vwH2bTyV1rj_Ck7EYqcdY-agMw4PXIGKMZ68/edit?usp=sharing) (view only, readable by anyone with the link). The leading requirement and scope for each attribute are in [`results/summary.csv`](results/summary.csv), every parsed ballot line, sorted by section and attribute, in [`results/ballots.csv`](results/ballots.csv), and who has voted in [`results/participation.csv`](results/participation.csv). They are produced by [`scripts/tally.py`](scripts/tally.py) from the comments on the five discussions. A split answer such as `NET/FVON` counts toward each option it names, and a tie shows every option that drew, for example `Req / Rec`.
+**Results:** start with [RESULTS.md](RESULTS.md): what is agreed, what is still open, and every attribute with its votes. The same data is in the [results sheet](https://docs.google.com/spreadsheets/d/11Myewj4vwH2bTyV1rj_Ck7EYqcdY-agMw4PXIGKMZ68/edit?usp=sharing) (view only, readable by anyone with the link). The leading requirement and scope for each attribute are in [`results/summary.csv`](results/summary.csv), every parsed ballot line, sorted by section and attribute, in [`results/ballots.csv`](results/ballots.csv), and who has voted in [`results/participation.csv`](results/participation.csv). They are produced by [`scripts/tally.py`](scripts/tally.py) from the comments on the five discussions. A split answer such as `NET/FVON` counts toward each option it names, and a tie shows every option that drew, for example `Req / Opt`.
 
 ---
 
@@ -18,11 +18,10 @@ For each attribute the group makes **two** decisions:
 | Code | Meaning |
 |------|---------|
 | **Req** (Required) | File is rejected / non-compliant without it |
-| **Rec** (Recommended) | Expected wherever meaningful; absence never blocks ingestion |
-| **Sug** (Suggested) | Not part of the core FVON spec; networks may add it where they find it useful |
-| **Not** (Not recommended) | Should not be used in FVON files: redundant, ambiguous, or not applicable to fishing vessels. Ignored if present |
+| **Opt** (Optional) | May be included where meaningful or useful to a network; absence never blocks ingestion |
+| **N/A** (Not applicable) | Should not be used in FVON files: redundant, ambiguous, or not applicable to fishing vessels. Ignored if present |
 
-> Terminology note: this deliberately reuses NCEI's own wording (Required / Recommended / Suggested, dropping their "Highly Recommended" middle tier), so the FVON decision reads on the same scale as the NCEI column in the tables. IMOS's two tiers map onto it as Mandatory → Required and Optional → Recommended/Suggested. **Not recommended** has no equivalent in either source: it is the FVON decision to leave an attribute out, for attributes that are redundant with another one, ambiguous in practice, or do not fit fishing vessels.
+> Terminology note: the scale was simplified to three levels after the first poll, following feedback from the DMAC group. NCEI's Highly Recommended, Recommended and Suggested tiers all map to **Optional**, and IMOS's two tiers map directly (Mandatory → Required, Optional → Optional). **Not applicable** has no equivalent in either source: it is the FVON decision to leave an attribute out, for attributes that are redundant with another one, ambiguous in practice, or do not fit fishing vessels. Ballots cast on the earlier four-level scale are counted as Recommended/Suggested → Optional and Not recommended → Not applicable.
 
 ### Decision B: Value scope (who sets the value?)
 | Code | Meaning | Example |

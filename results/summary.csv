@@ -1,64 +1,64 @@
 Section,Attribute,NCEI,IMOS,Leading requirement,Leading scope
-WHAT,cdm_data_type,Rec,O,Sug,FVON
+WHAT,cdm_data_type,Rec,O,Opt,FVON
 WHAT,Conventions,Req,M,Req,FVON
-WHAT,featureType,(structural),O,Rec,FVON
-WHAT,id,Req,n/a,Rec,FILE
+WHAT,featureType,(structural),O,Opt,FVON
+WHAT,id,Req,n/a,Opt,FILE
 WHAT,instrument,Rec,O,Req,FILE
-WHAT,instrument_serial_number,n/a,O,Rec,FILE
-WHAT,instrument_vocabulary,Rec,n/a,Rec,FILE
-WHAT,keywords,Rec,O,Sug,FVON
-WHAT,keywords_vocabulary,Rec,O,Sug,FVON
-WHAT,metadata_link,Sug,O,Sug,NET
+WHAT,instrument_serial_number,n/a,O,Opt,FILE
+WHAT,instrument_vocabulary,Rec,n/a,Opt,FILE
+WHAT,keywords,Rec,O,Opt,FVON
+WHAT,keywords_vocabulary,Rec,O,Opt,FVON
+WHAT,metadata_link,Sug,O,Opt,NET
 WHAT,naming_authority,Req,M,Req,FVON
-WHAT,ncei_template_version,Sug,n/a,Not,n/a
-WHAT,platform,Rec,O,Rec,FVON / NET
-WHAT,platform_vocabulary,Rec,n/a,Rec,FVON
-WHAT,product_version,Sug,n/a,Rec,FILE
-WHAT,program,Sug,n/a,Rec,FVON
-WHAT,project,Rec,M,Req / Rec,NET
-WHAT,sensorML,n/a,O,Not,n/a
-WHAT,site_code/site,n/a,O,Not,n/a
+WHAT,ncei_template_version,Sug,n/a,N/A,n/a
+WHAT,platform,Rec,O,Opt,FVON / NET
+WHAT,platform_vocabulary,Rec,n/a,Opt,FVON
+WHAT,product_version,Sug,n/a,Opt,FILE
+WHAT,program,Sug,n/a,Opt,FVON
+WHAT,project,Rec,M,Opt,NET
+WHAT,sensorML,n/a,O,N/A,n/a
+WHAT,site_code/site,n/a,O,N/A,n/a
 WHAT,standard_name_vocabulary,Rec,M,Req,FVON
 WHAT,summary,Req,M,Req,FILE
 WHAT,title,Req,M,Req,FILE
-WHAT,uuid,Sug,n/a,Not,FILE
-WHERE,geospatial_bounds,Sug,n/a,Sug,FILE
+WHAT,uuid,Sug,n/a,N/A,FILE
+WHERE,geospatial_bounds,Sug,n/a,Opt,FILE
 WHERE,geospatial_lat_min/max,Rec,M,Req,FILE
-WHERE,geospatial_lat/lon/vertical_resolution,Rec,n/a,Not,n/a
-WHERE,geospatial_lat/lon_units,Rec,O,Rec,FVON / NET
+WHERE,geospatial_lat/lon/vertical_resolution,Rec,n/a,N/A,n/a
+WHERE,geospatial_lat/lon_units,Rec,O,Opt,FVON / NET
 WHERE,geospatial_lon_min/max,Rec,M,Req,FILE
 WHERE,geospatial_vertical_min/max,Rec,M,Req,FILE
-WHERE,geospatial_vertical_positive,Rec,M,Rec,FVON
-WHERE,geospatial_vertical_units,Rec,O,Rec,FVON
-WHERE,sea_name,Rec,n/a,Not,NET
+WHERE,geospatial_vertical_positive,Rec,M,Opt,FVON
+WHERE,geospatial_vertical_units,Rec,O,Opt,FVON
+WHERE,sea_name,Rec,n/a,N/A,NET
 WHEN,date_created,Rec,M,Req,FILE
-WHEN,date_issued,Rec,n/a,Sug / Not,n/a
-WHEN,date_metadata_modified,Rec,n/a,Req / Sug / Not,n/a
-WHEN,date_modified,Rec,O,Req / Rec / Sug,FILE
-WHEN,local_time_zone,n/a,O,Sug / Not,n/a
-WHEN,time_coverage_duration,Rec,n/a,Sug,n/a
-WHEN,time_coverage_resolution,Rec,n/a,Req / Rec / Not,FILE
+WHEN,date_issued,Rec,n/a,N/A,n/a
+WHEN,date_metadata_modified,Rec,n/a,N/A,FILE / n/a
+WHEN,date_modified,Rec,O,Opt,FILE
+WHEN,local_time_zone,n/a,O,N/A,
+WHEN,time_coverage_duration,Rec,n/a,Opt,n/a
+WHEN,time_coverage_resolution,Rec,n/a,N/A,FILE
 WHEN,time_coverage_start/end,Rec,M,Req,FILE
 WHO,acknowledgment,Rec,M,Req,NET
-WHO,contributor_name/role,Rec,n/a,Sug,FILE
-WHO,creator_email,Rec,`author_email` (O),Req / Rec,NET
-WHO,creator_institution,Rec,n/a,Req / Rec / Sug,NET
-WHO,creator_name,HR,`author` / `principal_investigator` (M),Req / Rec,NET
-WHO,creator_type,HR,n/a,Rec / Not,NET
-WHO,creator_url,Rec,n/a,Rec,NET
+WHO,contributor_name/role,Rec,n/a,Opt,FILE
+WHO,creator_email,Rec,`author_email` (O),Req,NET
+WHO,creator_institution,Rec,n/a,Opt,NET
+WHO,creator_name,HR,`author` / `principal_investigator` (M),Req,NET
+WHO,creator_type,HR,n/a,N/A,
+WHO,creator_url,Rec,n/a,Opt,NET
 WHO,institution,HR,M,Req,NET
-WHO,principal_investigator,n/a,M,Req / Rec / Sug,NET / FILE / n/a
+WHO,principal_investigator,n/a,M,Opt,NET / FILE / n/a
 WHO,publisher_email,Rec,`data_centre_email` (M),Req,NET
 WHO,publisher_name,Rec,`data_centre` (M),Req,NET
-WHO,publisher_type/url/institution,Rec,n/a,Sug,NET
-HOW,citation,n/a,M,Rec,NET
-HOW,comment,Rec,O,Rec,NET / FILE
-HOW,disclaimer,n/a,M (IMOS),Rec,NET
-HOW,file_version_quality_control,n/a,O,Rec / Sug,NET / n/a
-HOW,history,Rec,O,Rec,FILE
+WHO,publisher_type/url/institution,Rec,n/a,Opt,NET
+HOW,citation,n/a,M,Opt,NET
+HOW,comment,Rec,O,Opt,NET / FILE
+HOW,disclaimer,n/a,M (IMOS),Opt,NET
+HOW,file_version_quality_control,n/a,O,Opt,NET / n/a
+HOW,history,Rec,O,Opt,FILE
 HOW,license,Rec,M,Req,FVON
-HOW,lineage,n/a,O,Rec / Sug / Not,n/a
+HOW,lineage,n/a,O,Opt,n/a
 HOW,processing_level,Rec,O,Req,FILE
-HOW,quality_control_log,n/a,O,Req / Rec / Sug,FILE
-HOW,references,Rec,O,Rec,NET
+HOW,quality_control_log,n/a,O,Opt,FILE
+HOW,references,Rec,O,Opt,NET
 HOW,source,Rec,O,Req,FVON
